@@ -10,8 +10,8 @@ def add(request):
 
 def addrec(request):
     x=request.POST['first']
-    y=request.POST['first']
-    z=request.POST['first']
+    y=request.POST['last']
+    z=request.POST['country']
     mem=Member(firstname=x,lastname=y,country=z)
     mem.save()
     return redirect("/")
